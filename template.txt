@@ -1,0 +1,5 @@
+<CreatePaymentRequest xmlns="http://www.livelo.com.br/wallet/v1" xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+	<id>${i}</id>
+	<date>2018-07-16T12:43:57-03:00</date>
+	<description>Pagamento utilizando pontos na CVC</description>
+</livords1:SubmitOrderRequest>

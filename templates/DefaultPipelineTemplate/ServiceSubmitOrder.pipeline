@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<con:pipelineEntry xmlns:con='http://www.bea.com/wli/sb/pipeline/config' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    <con:coreEntry>
+        <con:binding type='SOAP' isSoap12='false' xsi:type='con:SoapBindingType'>
+            <con:wsdl ref='PartnerServices/${partnerName}/v1/wsdls/SalesPartner${partnerCode}Service'/>
+            <con:binding>
+                <con:name>SalesPartnerServicePortBinding</con:name>
+                <con:namespace>http://wsdlns.pontoslivelo.com.br/Services/SalesPartner${partnerCode}/V1</con:namespace>
+            </con:binding>
+        </con:binding>
+        <con:xqConfiguration>
+            <con:snippetVersion>1.0</con:snippetVersion>
+        </con:xqConfiguration>
+    </con:coreEntry>
+    <con:router/>
+	<con:template ref='Services/template/DefaultPipelineTemplate'/>
+</con:pipelineEntry>
